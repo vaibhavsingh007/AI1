@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "SearchingInAI", "SearchingInAI\SearchingInAI.pyproj", "{D4050622-5555-4C77-A7E0-027E6A8634B7}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "MachineLearning", "MachineLearning\MachineLearning.pyproj", "{C0616BDC-C222-4062-AEDA-A1A643DD411C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{D4050622-5555-4C77-A7E0-027E6A8634B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D4050622-5555-4C77-A7E0-027E6A8634B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0616BDC-C222-4062-AEDA-A1A643DD411C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0616BDC-C222-4062-AEDA-A1A643DD411C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
