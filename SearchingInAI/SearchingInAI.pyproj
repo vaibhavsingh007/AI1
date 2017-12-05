@@ -4,7 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d4050622-5555-4c77-a7e0-027e6a8634b7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SearchingInAI.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,7 +25,6 @@
     <Compile Include="15puzzleAstar.py" />
     <Compile Include="15puzzleDLS.py" />
     <Compile Include="MDP_ValueIteration.py" />
-    <Compile Include="SearchingInAI.py" />
     <Compile Include="_15puzzleBFS.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
