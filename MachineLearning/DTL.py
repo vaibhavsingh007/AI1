@@ -1,5 +1,5 @@
 # Decision Tree Learning using Information Gain, and Chi-Squared Pruning.
-# vsingh@uic.edu 07dec17
+# vsingh38@uic.edu 07dec17
 from pprint import pprint
 import numpy as np
 
@@ -53,6 +53,23 @@ def information_gain(y, x):
 def is_pure(s):
     return len(set(s)) == 1
 
+# ref: http://dataaspirant.com/2017/01/30/how-decision-tree-algorithm-works/
+'''
+Excerpt:
+Information gain for Var A
+Var A has value >=5 for 12 records out of 16 and 4 records with value <5 value.
+
+For Var A >= 5 & class == positive: 5/12
+For Var A >= 5 & class == negative: 7/12
+Entropy(5,7) = -1 * ( (5/12)*log2(5/12) + (7/12)*log2(7/12)) = 0.9799
+For Var A <5 & class == positive: 3/4
+For Var A <5 & class == negative: 1/4
+Entropy(3,1) =  -1 * ( (3/4)*log2(3/4) + (1/4)*log2(1/4)) = 0.81128
+Entropy(Target, A) = P(>=5) * E(5,7) + P(<5) * E(3,1)
+= (12/16) * 0.9799 + (4/16) * 0.81128 = 0.937745
+
+\textrm{Information Gain(IG) = E(Target) - E(Target,A) = 1- 0.9337745 = 0.062255}  
+'''
 def DTL(x, y):
     # If there could be no get_occurences_per_unique_val, just return the original set
     if is_pure(y) or len(y) == 0:
